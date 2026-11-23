@@ -1,0 +1,10 @@
+description: Answer a question from a short passage; graded by the key facts the answer must contain.
+category: accuracy
+system: Answer using only the passage. Be brief.
+template: |
+  Passage: {{passage}}
+
+  Question: {{question}}
+grader:
+  type: contains
+params: {temperature: 0, max_tokens: 80}

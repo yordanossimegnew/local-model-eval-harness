@@ -1,0 +1,45 @@
+description: Extract invoice fields as JSON. Scores field accuracy and whether the
+  reply is valid JSON matching the schema.
+category: json
+system: You extract structured data. Reply with a single JSON object and nothing else.
+template: 'Extract these fields from the invoice: vendor, invoice_number, date (YYYY-MM-DD),
+
+  total (a number) and currency (ISO 4217 code).
+
+
+  {{invoice}}
+
+  '
+grader:
+  type: json
+  fields:
+  - vendor
+  - invoice_number
+  - date
+  - total
+  - currency
+  json_schema:
+    type: object
+    required:
+    - vendor
+    - invoice_number
+    - date
+    - total
+    - currency
+    properties:
+      vendor:
+        type: string
+      invoice_number:
+        type: string
+      date:
+        type: string
+        pattern: ^\d{4}-\d{2}-\d{2}$
+      total:
+        type: number
+      currency:
+        type: string
+        pattern: ^[A-Z]{3}$
+params:
+  temperature: 0
+  max_tokens: 200
+  json_mode: false

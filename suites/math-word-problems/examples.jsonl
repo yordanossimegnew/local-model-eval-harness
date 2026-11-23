@@ -1,0 +1,10 @@
+{"id": "m1", "question": "A bakery sells muffins for $3 each. Maya buys 7 muffins and pays with a $50 bill. How much change does she get?", "expected": 29}
+{"id": "m2", "question": "A train travels 180 km in 2 hours and then 120 km in 1.5 hours. What was its average speed in km/h for the whole trip?", "expected": 85.71}
+{"id": "m3", "question": "A class has 32 students. 3/8 of them walk to school and the rest take the bus. How many take the bus?", "expected": 20}
+{"id": "m4", "question": "A jacket costs $80. It is discounted by 25%, then a 10% tax is added to the discounted price. What is the final price?", "expected": 66}
+{"id": "m5", "question": "Tom reads 12 pages on Monday and each day he reads 3 more pages than the day before. How many pages has he read in total after Friday?", "expected": 90}
+{"id": "m6", "question": "A rectangle is 14 m long and its width is half its length. What is its area in square metres?", "expected": 98}
+{"id": "m7", "question": "A water tank holds 1,200 litres. It is filled at 45 litres per minute and leaks 5 litres per minute. How many minutes does it take to fill from empty?", "expected": 30}
+{"id": "m8", "question": "Lena earns $18 per hour and works 6 hours a day, 5 days a week. She saves one third of her pay. How much does she save in 4 weeks?", "expected": 720}
+{"id": "m9", "question": "There are 5 red, 7 blue and 8 green marbles in a bag. What percentage of the marbles are blue?", "expected": 35}
+{"id": "m10", "question": "A phone plan costs $15 per month plus $0.10 per text after the first 200 texts. Sam sends 340 texts in a month. What is his bill?", "expected": 29}

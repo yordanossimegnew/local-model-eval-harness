@@ -1,0 +1,16 @@
+# Local model servers to evaluate. Models are referred to as <runtime name>/<model name>,
+# e.g. ollama/qwen2.5:1.5b or llamacpp/local-model.
+runtimes:
+  - name: ollama
+    kind: ollama
+    base_url: http://host.docker.internal:11434
+
+  # Any OpenAI-compatible server: llama.cpp (llama-server), vLLM, LM Studio, LocalAI ...
+  - name: lmstudio
+    kind: openai
+    base_url: http://host.docker.internal:1234/v1
+
+  - name: llamacpp
+    kind: openai
+    base_url: http://host.docker.internal:8080/v1
+    # api_key: only if your server requires one

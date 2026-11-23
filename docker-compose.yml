@@ -1,0 +1,32 @@
+# Postgres + API + UI. Ollama runs on the host: runtimes.yaml uses host.docker.internal there.
+services:
+  db:
+    image: postgres:17
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: local_model_eval
+    volumes: [pgdata:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 3s
+      retries: 20
+
+  api:
+    build: .
+    environment:
+      DATABASE_URL: postgresql://postgres:postgres@db:5432/local_model_eval
+      RUNTIMES_FILE: /app/docker/runtimes.docker.yaml
+    extra_hosts: ["host.docker.internal:host-gateway"]
+    depends_on: {db: {condition: service_healthy}}
+    ports: ["8000:8000"]
+
+  ui:
+    build: .
+    command: ["streamlit", "run", "ui/app.py", "--server.address", "0.0.0.0"]
+    environment:
+      AGENT_API_URL: http://api:8000
+    depends_on: [api]
+    ports: ["8501:8501"]
+
+volumes:
+  pgdata:

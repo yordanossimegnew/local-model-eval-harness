@@ -1,0 +1,8 @@
+description: Short arithmetic word problems; the last number in the reply is taken as the answer.
+category: accuracy
+system: You solve math word problems. Think briefly, then give the final answer as a number on the last line.
+template: "{{question}}"
+grader:
+  type: number
+  tolerance: 0.01
+params: {temperature: 0, max_tokens: 256}

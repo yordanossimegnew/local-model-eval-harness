@@ -1,0 +1,10 @@
+{"id": "t1", "request": "What's the weather like in Lisbon right now?", "expected": {"name": "get_weather", "arguments": {"city": "Lisbon"}}}
+{"id": "t2", "request": "How hot is it in Phoenix? Give it to me in fahrenheit.", "expected": {"name": "get_weather", "arguments": {"city": "Phoenix", "unit": "fahrenheit"}}}
+{"id": "t3", "request": "Convert 250 euros to US dollars.", "expected": {"name": "convert_currency", "arguments": {"amount": 250, "from_currency": "EUR", "to_currency": "USD"}}}
+{"id": "t4", "request": "How many yen is 40 pounds sterling?", "expected": {"name": "convert_currency", "arguments": {"amount": 40, "from_currency": "GBP", "to_currency": "JPY"}}}
+{"id": "t5", "request": "Remind me to call the dentist on 2026-11-25 at 09:00.", "expected": {"name": "create_reminder", "arguments": {"when": "2026-11-25T09:00"}}}
+{"id": "t6", "request": "What is 12 times 12?", "expected": {"name": null}}
+{"id": "t7", "request": "Is it raining in Nairobi?", "expected": {"name": "get_weather", "arguments": {"city": "Nairobi"}}}
+{"id": "t8", "request": "Write a haiku about autumn.", "expected": {"name": null}}
+{"id": "t9", "request": "I have 1000 Swiss francs, what's that in euros?", "expected": {"name": "convert_currency", "arguments": {"amount": 1000, "from_currency": "CHF", "to_currency": "EUR"}}}
+{"id": "t10", "request": "Set a reminder for 2026-12-01T18:30 to submit the expense report.", "expected": {"name": "create_reminder", "arguments": {"when": "2026-12-01T18:30"}}}

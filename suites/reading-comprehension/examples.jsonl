@@ -1,0 +1,8 @@
+{"id": "r1", "passage": "The Hallstatt ferry runs every 40 minutes from 8:00 to 18:20 in summer. In winter the last crossing is at 16:00.", "question": "When is the last ferry in winter?", "expected": "16:00"}
+{"id": "r2", "passage": "Orion Labs was founded in 2011 by Priya Natarajan and moved its headquarters from Austin to Denver in 2019.", "question": "Which city is Orion Labs headquartered in?", "expected": "Denver"}
+{"id": "r3", "passage": "The recipe needs 400 g of flour, 2 eggs and 250 ml of milk. Rest the batter for 30 minutes before frying.", "question": "How long should the batter rest?", "expected": "30 minutes"}
+{"id": "r4", "passage": "Ticket refunds are available up to 48 hours before the event. After that, tickets can only be transferred to another person.", "question": "What can you do with a ticket 24 hours before the event?", "expected": "transfer"}
+{"id": "r5", "passage": "The library on Elm Street is closed on Mondays. It opens at 10:00 from Tuesday to Saturday and at noon on Sundays.", "question": "What time does the library open on Sunday?", "expected": ["noon"]}
+{"id": "r6", "passage": "Mount Kerala's northern trail is 9 km long and rated hard; the southern trail is 14 km but rated easy.", "question": "Which trail is longer, and how long is it?", "expected": ["southern", "14"]}
+{"id": "r7", "passage": "Version 3.2 removed support for Python 3.8. Python 3.9 remains supported until version 4.0.", "question": "Which Python version was dropped in 3.2?", "expected": "3.8"}
+{"id": "r8", "passage": "Each team member gets 25 vacation days per year; unused days, up to 5, carry over to the next year.", "question": "How many unused days can carry over?", "expected": "5"}
