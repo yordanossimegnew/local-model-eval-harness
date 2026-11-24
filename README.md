@@ -1,6 +1,6 @@
 # Local Model Eval Harness
 
-[![tests](https://github.com/yordanossimegnew/local-model-eval-harness/actions/workflows/tests.yml/badge.svg)](https://github.com/yordanossimegnew/local-model-eval-harness/actions/workflows/tests.yml)
+[![tests](https://github.com/yordanossimegnew/local-model-eval-harness/actions/workflows/tests.yml/badge.svg)](https://github.com/yordanossimegnew/local-model-eval-harness/actions/workflows/tests.yml) ![Python 3.12](https://img.shields.io/badge/python-3.12-blue) [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 Which local model should you actually run? This harness puts models served by **Ollama** or any
 **OpenAI-compatible server** (llama.cpp, vLLM, LM Studio, LocalAI) through the same eval suites.
@@ -25,6 +25,13 @@ on **PostgreSQL**, with a **FastAPI** API, a CLI and a **Streamlit** UI.
 | Leaderboard | Drill-down | New run |
 |---|---|---|
 | ![Leaderboard](docs/screenshots/leaderboard.png) | ![Drill-down](docs/screenshots/drill-down.png) | ![New run](docs/screenshots/new-run.png) |
+
+## Engineering highlights
+
+- One code path for Ollama and any OpenAI-compatible server (llama.cpp, vLLM, LM Studio) through LangChain, including tool calling.
+- Measures what matters for local models: accuracy, JSON-schema and tool-call validity, TTFT, decode tokens/s, load time and RAM.
+- Pass rates come with 95% Wilson intervals, because 10 examples prove less than they seem to.
+- Models run one at a time (so speed numbers are fair), and an interrupted run resumes where it stopped.
 
 ## What it measures
 
