@@ -1,5 +1,7 @@
 # Local Model Eval Harness
 
+[![tests](https://github.com/yordanossimegnew/local-model-eval-harness/actions/workflows/tests.yml/badge.svg)](https://github.com/yordanossimegnew/local-model-eval-harness/actions/workflows/tests.yml)
+
 Which local model should you actually run? This harness puts models served by **Ollama** or any
 **OpenAI-compatible server** (llama.cpp, vLLM, LM Studio, LocalAI) through the same eval suites.
 For each model it measures **task accuracy**, **JSON and tool-call reliability**, and **speed and
